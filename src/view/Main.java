@@ -1,5 +1,6 @@
 package view;
 
+import controller.ContaController;
 import model.Cliente;
 import model.Conta;
 import model.ContaCorrente;
@@ -18,6 +19,8 @@ public class Main {
         int opcao;
         Scanner sc = new Scanner(System.in);
         ClienteController clienteController = new ClienteController();
+        ContaController contaController = new ContaController();
+
 
         do{
             System.out.println("Bem vindo ao menu do ByteBank");
@@ -29,10 +32,9 @@ public class Main {
             sc.nextLine();
             limparTela();
             switch(opcao){
-                case 1 -> {
+                case 1 ->
                     clienteController.mostrarMenu();
-
-                }
+                case 2 -> contaController.mostrarMenuContaCorrente();
             }
         }while(opcao!=0);
     }

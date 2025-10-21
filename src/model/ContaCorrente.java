@@ -6,4 +6,6 @@ public class ContaCorrente extends Conta{
         super(numero, agencia, saldo, titular);
     }
 
+    public ContaCorrente() {
+    }
 }

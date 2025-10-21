@@ -13,6 +13,9 @@ abstract public class Conta {
         this.titular = titular;
     }
 
+    public Conta() {
+    }
+
     @Override
     public String toString() {
         return "agencia=" + agencia + '\'' +
