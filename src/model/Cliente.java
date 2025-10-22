@@ -7,33 +7,14 @@ public class Cliente {
     private int cpf;
     private List<Conta> contas;
 
-    public String getNome() {
-        return nome;
-    }
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
+    public int getCpf() { return cpf; }
+    public void setCpf(int cpf) { this.cpf = cpf; }
+    public List<Conta> getContas() { return contas; }
+    public void setContas(List<Conta> contas) { this.contas = contas; }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(int cpf) {
-        this.cpf = cpf;
-    }
-
-    public List<Conta> getContas() {
-        return contas;
-    }
-
-    public void setContas(List<Conta> contas) {
-        this.contas = contas;
-    }
-
-    public Cliente(){
-
-    }
+    public Cliente(){ }
     public Cliente(String nome, int cpf) {
         this.nome = nome;
         this.cpf = cpf;
@@ -44,7 +25,6 @@ public class Cliente {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
                 ", cpf=" + cpf +
-                ", contas=" + contas +
                 '}';
     }
 }
